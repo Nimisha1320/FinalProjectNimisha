@@ -11,6 +11,7 @@ public class UserAuthentication {
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/shopping_system";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "nimi1234";
+    
 
     public boolean authenticateUser(String username, String password) {
         try (Connection connection = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASSWORD)) {
